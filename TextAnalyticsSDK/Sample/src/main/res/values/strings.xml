@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Text Analytics Sample</string>
+
+    <!-- TODO: Please add the subscription key here -->
+    <string name="subscription_key">Please_add_the_subscription_key_here</string>
+
+    <!-- Strings on the Main screen -->
+    <string name="load_sample_text">Load sample text or enter your own:</string>
+    <string name="button_positive_sample">Positive sample</string>
+    <string name="button_negative_sample">Negative sample</string>
+    <string name="positive_sample">I had a wonderful experience! The rooms were wonderful and the staff were helpful.</string>
+    <string name="negative_sample">I had a terrible time at the hotel. The staff were rude and the food was awful.</string>
+    <string name="hint_input_text">Input for Text Analysis</string>
+    <string name="edittext_error">Please enter some text for analysis.</string>
+    <string name="button_analyze">Analyze</string>
+    <string name="label_detected_language">Detected Language</string>
+    <string name="label_key_phrases">Key phrases</string>
+    <string name="label_sentiment_score">Sentiment score</string>
+
+    <string name="progress_bar_title">In progress</string>
+    <string name="need_API_key">Enter a valid API key in strings.xml or on the app Key screen!</string>
+
+    <!-- Detected Topics-->
+    <string name="title_activity_detected_topics">Detect Topics</string>
+    <string name="go_to_detected_topics_screen">Go to Detected Topics screen</string>
+    <string name="button_text_get_so_questions">1. Get Stack Overflow questions</string>
+    <string name="button_get_opid">2. Get Operation ID</string>
+    <string name="label_detected_topics">Detected topics</string>
+    <string name="button_text_detect_topics">3. Detect Topics</string>
+    <string name="no_of_so_questions">%1$d questions unanswered or with no answers</string>
+
+    <!-- Strings on the Subscription key screen-->
+    <string name="action_key">Service Key</string>
+    <string name="title_activity_key">Subscription Key</string>
+    <string name="key_instruction_details">
+        To use the service, you need to ensure that you have a valid subscription key.
+        \n\nPlease note that each service (Face, Emotion, Speech, etc) has its own subscription key.
+        \n\nIf you do not have a key yet, please use <a href="https://www.microsoft.com/cognitive-services/en-us/sign-up">this link</a> to get an API key,
+        and then enter it below.
+    </string>
+
+    <!-- Errors -->
+    <string name="error_api_call">Error getting data.</string>
+
+    <string name="detected_topics_activity_desc">Retrieve unanswered questions from Stack Overflow for topic detection. Step 3 may take longer than 5 minutes.</string>
+</resources>

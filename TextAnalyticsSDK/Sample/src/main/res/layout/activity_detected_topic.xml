@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.microsoft.cognitive.textanalytics.sample.DetectedTopicActivity">
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detected_topics_activity_desc"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+    <!-- Get stack overflow questions -->
+    <Button
+        android:id="@+id/btn_get_so_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/button_text_get_so_questions" />
+
+    <TextView
+        android:id="@+id/no_of_so_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/no_of_so_questions" />
+
+    <!-- Get Operation Id -->
+    <Button
+        android:id="@+id/btn_get_OpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/button_get_opid" />
+
+    <!-- Display Operation Id in UI -->
+    <TextView
+        android:id="@+id/opId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="Operation Id" />
+
+    <!-- Get Detected topics -->
+    <Button
+        android:id="@+id/btn_detect_topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/button_text_detect_topics" />
+
+    <!-- Display detected topics in UI-->
+    <TextView
+        android:id="@+id/detected_topics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Detected topics - " />
+
+</LinearLayout>
