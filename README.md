@@ -31,6 +31,7 @@ Android OS must be Android 4.1 or higher (API Level 16 or higher)
 <img src="SampleScreenshots/Screen1.png" width="40%"/>
 <img src="SampleScreenshots/Screen2.png" width="40%"/>
 </div>
+
 ### Run the Sample
 In Android Studio, select menu "Run", and "Run app" to launch this sample app.
 
