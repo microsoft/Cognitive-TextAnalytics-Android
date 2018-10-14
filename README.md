@@ -27,10 +27,10 @@ Android OS must be Android 4.1 or higher (API Level 16 or higher)
     in folder "Sample\app\src\main\res\values\string.xml".
 
 4.  In Android Studio, select menu "Build \> Make Project" to build the sample, and "Run" to launch this sample app.
-
-<img src="SampleScreenshots/Screen1.png" width="50%"/>
-<img src="SampleScreenshots/Screen2.png" width="50%"/>
-
+<div align="center">
+<img src="SampleScreenshots/Screen1.png" width="40%"/>
+<img src="SampleScreenshots/Screen2.png" width="40%"/>
+</div>
 ### Run the Sample
 In Android Studio, select menu "Run", and "Run app" to launch this sample app.
 
