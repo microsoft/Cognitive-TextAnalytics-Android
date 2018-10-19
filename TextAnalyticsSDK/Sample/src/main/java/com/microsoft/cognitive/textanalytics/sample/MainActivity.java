@@ -49,8 +49,8 @@ import android.widget.Toast;
 
 import com.microsoft.cognitive.textanalytic.sample.R;
 import com.microsoft.cognitive.textanalytics.model.request.RequestDoc;
-import com.microsoft.cognitive.textanalytics.model.request.keyphrases_sentiment.TextRequest;
 import com.microsoft.cognitive.textanalytics.model.request.RequestDocIncludeLanguage;
+import com.microsoft.cognitive.textanalytics.model.request.keyphrases_sentiment.TextRequest;
 import com.microsoft.cognitive.textanalytics.model.request.language.LanguageRequest;
 import com.microsoft.cognitive.textanalytics.model.response.keyphrases.KeyPhrasesResponse;
 import com.microsoft.cognitive.textanalytics.model.response.language.LanguageResponse;
@@ -111,15 +111,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonPositiveSample = (Button) findViewById(R.id.btn_positive_sample);
-        Button buttonNegativeSample = (Button) findViewById(R.id.btn_negative_sample);
+        Button buttonPositiveSample = findViewById(R.id.btn_positive_sample);
+        Button buttonNegativeSample = findViewById(R.id.btn_negative_sample);
 
-        mTextInput = (TextInputEditText) findViewById(R.id.text_input);
-        mClearButton = (ImageButton) findViewById(R.id.clear_all);
+        mTextInput = findViewById(R.id.text_input);
+        mClearButton = findViewById(R.id.clear_all);
 
-        mKeyPhrases = (TextView) findViewById(R.id.key_phrases);
-        mDetectedLanguage = (TextView) findViewById(R.id.detected_language);
-        mSentimentScore = (TextView) findViewById(R.id.sentiment_score);
+        mKeyPhrases = findViewById(R.id.key_phrases);
+        mDetectedLanguage = findViewById(R.id.detected_language);
+        mSentimentScore = findViewById(R.id.sentiment_score);
 
         mTextInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -168,11 +168,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonPositiveSample.setOnClickListener(this);
         buttonNegativeSample.setOnClickListener(this);
         mClearButton.setOnClickListener(this);
-        ((TextView) findViewById(R.id.detect_language)).setOnClickListener(this);
-        ((TextView) findViewById(R.id.get_key_phrases)).setOnClickListener(this);
-        ((TextView) findViewById(R.id.get_sentiment_score)).setOnClickListener(this);
+        findViewById(R.id.detect_language).setOnClickListener(this);
+        findViewById(R.id.get_key_phrases).setOnClickListener(this);
+        findViewById(R.id.get_sentiment_score).setOnClickListener(this);
 
-        ((Button) findViewById(R.id.goto_detected_topics)).setOnClickListener(this);
+        findViewById(R.id.goto_detected_topics).setOnClickListener(this);
 
         // Request for network calls
         mRequest = new ServiceRequestClient(mSubscriptionKey);
