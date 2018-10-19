@@ -73,6 +73,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
+
 /**
  * This screen allows topic detection of multiple records, example by using titles from unanswered questions on StackOverflow
  * Must include at least 100 documents in the request
